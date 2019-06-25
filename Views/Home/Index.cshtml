@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>My University v1.0</h1>
+    <h2>Current App Health: @ViewBag.Health</h2>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Courses</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>@Html.ActionLink("Courses", "Index", "Courses", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-3">
+        <h2>Teachers</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>@Html.ActionLink("Teachers", "Index", "Teachers", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-3">
+        <h2>Students</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>@Html.ActionLink("Students", "Index", "Students", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-3">
+        <h2>Enrollments</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>@Html.ActionLink("Enrollments", "Index", "Enrollments", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
